@@ -874,7 +874,7 @@ export async function handler(chatUpdate) {
                         global.db.data.chats[m.chat] = {}
                     if (chat) {
                     if (!('antiDelete' in chat)) chat.antiDelete = false
-                    if (!('antiLink' in chat)) chat.antiLink = false
+                    if (!('antiLink' in chat)) chat.antiLink = true
                     if (!('antiSticker' in chat)) chat.antiSticker = false
                     if (!('antiToxic' in chat)) chat.antiToxic = false
                     if (!('detect' in chat)) chat.detect = false
@@ -896,12 +896,12 @@ export async function handler(chatUpdate) {
                     if (!('useDocument' in chat)) chat.useDocument = false
                     if (!('viewonce' in chat)) chat.viewonce = false
                     if (!('viewOnce' in chat)) chat.viewOnce = false
-                    if (!('welcome' in chat)) chat.welcome = false
+                    if (!('welcome' in chat)) chat.welcome = true
                     if (!isNumber(chat.expired)) chat.expired = 0
                 } else
                     global.db.data.chats[m.chat] = {
                         antiDelete: false,
-                        antiLink: false,
+                        antiLink: true,
                         antiSticker: false,
                         antiToxic: false,
                         detect: false,
@@ -924,7 +924,7 @@ export async function handler(chatUpdate) {
                         useDocument: false,
                         viewOnce: false,
                         viewonce: false,
-                        welcome: false,
+                        welcome: true,
                     }
             let settings = global.db.data.settings[this.user.jid]
             if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
@@ -1299,10 +1299,10 @@ export async function participantsUpdate({ id, participants, action }) {
                             })
                             
  /* conn.sendButtonDoc(id, wm, text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'Aʟᴅɪ X Aɪsʏᴀʜ', fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://instagram/b4c00t4an_s3l3b',
+    mediaUrl: 'https://instagram/sahrulwara_____',
     mediaType: 2, 
     description: sgc,
-    title: 'Hᴀʟᴏ Nɢᴀʙ',
+    title: 'Welcome',
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
     sourceUrl: sgc
@@ -1312,10 +1312,10 @@ export async function participantsUpdate({ id, participants, action }) {
 
   let godbye = 'https://telegra.ph/file/deaf59bc3e5216eaae814.jpg'
   conn.sendButtonImg(id, await(await fetch(action === 'add' ? wel : lea)).buffer(), 'Group Messege', text, action == 'add' ? 'ᴡᴇʟᴄᴏᴍᴇ' : 'sᴀʏᴏɴᴀʀᴀᴀ', action === 'add' ? '.intro' : 'WH MODS BOT', fakes, { contextInfo: { externalAdReply: { showAdAttribution: true,
-    mediaUrl: 'https://www.instagram.com/_ctzhid/',
+    mediaUrl: 'https://instagram/sahrulwara_____',
     mediaType: 2, 
     description: sgc,
-    title: "Jᴏɪɴ Sɪɴɪ Cᴜʏ",
+    title: "Lah Kok Keluar",
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sig
