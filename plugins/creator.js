@@ -1,8 +1,6 @@
-const delay = time => new Promise(res => setTimeout(res, time))
 let handler = async(m, { conn }) => {
 	conn.p = conn.p ? conn.p : {}
-	let id = m.chat
-	await conn.sendContact(m.chat, nomorown, nameown, fgif)
+	await conn.sendContact(m.chat, global.owner, fgif)
 
 handler.help = ['owner']
 handler.tags = ['info']
