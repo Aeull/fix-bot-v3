@@ -8,7 +8,7 @@ await conn.send2ButtonImg(m.chat, thumb, info, '⌕ ❙❘❙❙❘❙❚❙❘�
       mediaUrl: 'https://instagram.com/sahrulwara_____',
       mediaType: 2,
       Title: `Hallo Kak ${conn.getName(m.sender)}`,
-      thumbnail: await(await fetch(img)).buffer(),
+      thumbnail: await(await fetch(`https://telegra.ph/file/6840494256f74f31a0bfa.jpg`)).buffer(),
        }}})
 await conn.sendMessage(m.chat, {
           react: {
