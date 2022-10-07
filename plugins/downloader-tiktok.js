@@ -22,7 +22,10 @@ let p = await tiktok(args[0])
 
 _© ArullBotz_
 `.trim()
-conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `.tta ${args[0]}`, fgif)
+conn.sendFile(m.chat, p.link, `
+*📛Nickname:* ${nickname}
+*📒Description:* ${description}
+`.trim(), m)
 }
 
 handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
