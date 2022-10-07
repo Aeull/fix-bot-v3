@@ -3,7 +3,7 @@ import axios from 'axios'
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 if (!args[0]) throw 'Uhm...url nya mana?'
   let txt = '*ArullBotz*'
-  conn.sendButtonVid(m.chat, `https://api.lolhuman.xyz/api/tiktokwm?apikey=${lolkey}&url=${args[0]}`, txt, 'terima kasih telah menggunakan bot\nharap tidak spam\nkarena bisa menyebabkan kebanned', 'Thanks', 'bilek', m)
+  conn.sendButtonVid(m.chat, `https://api.lolhuman.xyz/api/tiktokwm?apikey=${lolkey}&url=${args[0]}`, txt, wm, 'Thanks', 'bilek', m)
     }
 
 handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
