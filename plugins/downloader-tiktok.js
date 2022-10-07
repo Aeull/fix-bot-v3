@@ -1,32 +1,10 @@
 import fetch from 'node-fetch'
 import axios from 'axios'
-import { tiktok } from "social_media_downloader"
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
-if (!args[0]) throw 'Linknya Mana?'
-try {
-let p = await tiktok(args[0])
-    if (!p.link) throw 'Can\'t download video!'
-    let cap = `*「 🇹 ᴛ ɪ ᴋ ᴛ ᴏ ᴋ 」*
-                 ████████▀▀▀████
-                 ████████────▀██
-                 ████████──█▄──█
-                 ███▀▀▀██──█████
-                 █▀──▄▄██──█████
-                 █──█████──█████
-                 █▄──▀▀▀──▄█████
-                 ███▄▄▄▄▄███████
-────────── ⇆ㅤ◁ㅤ ❚❚ㅤ ▷ㅤ↻ ──────────
-*Nickname:* ${p.dev}
-*Description:* ${p.description}
-*Url:* ${p.url}
-
-_© ArullBotz_
-`.trim()
-conn.sendFile(m.chat, p.link, `
-*📛Nickname:* ${nickname}
-*📒Description:* ${description}
-`.trim(), m)
-}
+if (!args[0]) throw 'Uhm...url nya mana?'
+  let txt = `🚀 *Link:* ${await(await axios.get(`https://tinyurl.com/api-create.php?url=${args[0]}`)).data}` 
+  conn.send2ButtonVid(m.chat, `https://api.lolhuman.xyz/api/tiktokwm?apikey=${lolkey}&url=${args[0]}`, txt, wm, `No Wm`, `.tiktoknowm ${args[0]}`, `Audio`, `.tta ${args[0]}`, m)
+    }
 
 handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
 handler.tags = ['downloader']
