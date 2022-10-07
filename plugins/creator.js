@@ -6,11 +6,11 @@ let info = `𝐇𝐚𝐥𝐥𝐨\ 𝐊𝐚𝐤 *${conn.getName(m.sender)}*\n
 await conn.sendContact(m.chat, global.owner, fgif)
 await conn.sendMessage(m.chat, {
           react: {
-            text: '🥶',
+            text: '🗿',
             key: m.key,
           }})
 }
-handler.customPrefix = /^(menu|.menu)$/i
+handler.customPrefix = /^(.owner)$/i
 handler.command = new RegExp
 
 
