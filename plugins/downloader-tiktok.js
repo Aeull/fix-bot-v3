@@ -8,6 +8,8 @@ if (!args[0]) throw 'Uhm...url nya mana?'
 
 handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
 handler.tags = ['downloader']
+handler.limit = true,
+handler.register = true,
 handler.command = /^(tik(tok)?(tok)?(dl)?)$/i
 
 export default handler
