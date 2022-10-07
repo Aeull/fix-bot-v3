@@ -80,7 +80,7 @@ global.linkgithub = 'Link Githu Belum Diisi' // tarok link github lu
 
 /*============== APIKEY SIMPEL ==============*/
 global.zenzkey = 'b8040941f7'
-global.lolkey = 'e54205a4ca2caa368cc067bb' // PUNYA WAHID  8e66d0934cf741bfd2182c16
+global.lolkey = '7facd6f11077ee4daecd55d5' // PUNYA WAHID  8e66d0934cf741bfd2182c16
 
 
 /*============== STAFF ==============*/
