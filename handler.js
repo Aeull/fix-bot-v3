@@ -1302,7 +1302,7 @@ export async function participantsUpdate({ id, participants, action }) {
     mediaUrl: 'https://instagram/sahrulwara_____',
     mediaType: 2, 
     description: sgc,
-    title: 'Welcome',
+    title: action === 'add' ? 'Semoga Betah Yah Kak🤗' : 'Yah Kok Keluar Sih',
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? wel : lea)).buffer(),
     sourceUrl: sgc
@@ -1315,7 +1315,7 @@ export async function participantsUpdate({ id, participants, action }) {
     mediaUrl: 'https://instagram/sahrulwara_____',
     mediaType: 2, 
     description: sgc,
-    title: "Lah Kok Keluar",
+    title: action === 'add' ? 'Semoga Betah Yah Kak🤗' : 'Yah Kok Keluar Sih',
     body: wm,
     thumbnail: await(await fetch(action === 'add' ? welcom : godbye)).buffer(),
     sourceUrl: sig
