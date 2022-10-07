@@ -7,6 +7,7 @@ await conn.send3ButtonImg(m.chat, thumb, info, '⌕ ❙❘❙❙❘❙❚❙❘�
       showAdAttribution: true,
       mediaUrl: 'https://instagram.com/sahrulwara_____',
       mediaType: 2,
+      body: 'Follow Ig Owner Saya',
       title: `Hallo Kak ${conn.getName(m.sender)}`,
       thumbnail: await(await fetch(`https://telegra.ph/file/6840494256f74f31a0bfa.jpg`)).buffer(),
        }}})
