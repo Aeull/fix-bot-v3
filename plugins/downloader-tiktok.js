@@ -58,14 +58,7 @@ let p = await tiktok(args[0])
 
 _©ArullBotz_
 `.trim()
-conn.sendButtonVid(m.chat, p.link, cap, author, 'Thanks', 'bilek', fgif, { contextInfo: { externalAdReply :{
-        showAdAttribution: true,
-        mediaUrl: 'https://chat.whatsapp.com/DNQOhra53AO0gL4eAZOVyb',
-        mediaType: 2,
-        title: `Nih Kak ${conn.getName(m.sender)}`,
-        body: 'Kangen Arull gk?',
-        thumbnail: thumb,
-        }}})
+conn.sendButtonVid(m.chat, p.link, cap, author, 'Thanks', 'bilek', fgif)
 } catch (e) {
     throw eror
     }
