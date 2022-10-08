@@ -58,7 +58,7 @@ let p = await tiktok(args[0])
 
 _©ArullBotz_
 `.trim()
-conn.sendButtonVid(m.chat, p.link, cap, author, 'Thanks', 'bilek', fgif)
+conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `.tta ${args[0]}`, fgif, fakeig)
 } catch (e) {
     throw eror
     }
