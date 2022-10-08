@@ -75,6 +75,7 @@ conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `
 
 handler.help = ['tiktok', 'tiktok', 'tiktokdl'].map(v => v + ' <url>')
 handler.tags = ['downloader']
+handler.register = true
 handler.command = /^(tik(tok)?(tok)?(dl)?)$/i
 
 export default handler
