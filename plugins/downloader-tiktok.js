@@ -45,7 +45,7 @@ export default handler
 
 import fetch from 'node-fetch'
 import axios from 'axios'
-import { tiktok } from "https://allinonedownloader.com/tiktok-video-downloader.php"
+import { tiktok } from "savefrom"
 let handler = async (m, { conn, usedPrefix, command, text, args }) => {
 if (!args[0]) throw 'Masukkan Link'
 try {
