@@ -65,9 +65,9 @@ let p = await tiktok(args[0])
 *Description:* ${p.description}
 *Url:* ${p.url}
 
-_©ArullBotz_
+_© ArullBotz_
 `.trim()
-conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `.tta ${args[0]}`, fgif)
+conn.send2ButtonVid(m.chat, p.link, cap, author, `Donasi`, `.donasi`, `Audio`, `.tta ${args[0]}`, fakes, adReply)
 } catch (e) {
     throw eror
     }
